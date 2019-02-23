@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingRight="15dip"
+        android:paddingLeft="15dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+        <TextView
+            android:textColor="#333"
+            android:gravity="center_vertical"
+            android:text="朝阳区配送点"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center_vertical"
+            android:text="待付款"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"></View>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_dingdan_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:paddingLeft="80dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+        <TextView
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical"
+            android:text="共2件商品"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center_vertical"
+            android:text="合计："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/chengse"
+            android:gravity="center_vertical"
+            android:text="¥143.00"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="（含运费 ¥0.00）"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"></View>
+    <LinearLayout
+        android:paddingRight="10dip"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="170dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/quxiaodingdan"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="取消订单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/fukuan"
+            android:layout_marginLeft="20dip"
+            android:textColor="@color/chengse"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="付款"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"></View>
+</LinearLayout>

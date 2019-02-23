@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"></View>
+
+    <LinearLayout
+        android:paddingRight="15dip"
+        android:paddingLeft="15dip"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dip">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="#333"
+                android:layout_gravity="center_vertical"
+                android:text="小李"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_marginLeft="20dip"
+                android:textColor="#333"
+                android:text="13333333333"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_moren"
+                android:textColor="@color/chengse"
+                android:layout_gravity="center_vertical"
+                android:text="默认地址"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_address"
+                android:textColor="#333"
+                android:layout_gravity="center_vertical"
+                android:text="山西，太原市，万柏林区"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#eee"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"></View>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.example.administrator.chushi"
+        minSdkVersion 16
+        targetSdkVersion 22//懒得做权限适配
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+        // ... and any other excludes go here
+    }
+
+    signingConfigs {
+        release {
+            keyAlias '厨狮生鲜'
+            keyPassword 'yangyanfei'
+            storePassword 'yangyanfei'
+            storeFile file('D:/workspace3/chushi/keystore.jks')
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+    /*针对greenDao的一些配置*/
+    greendao {
+        schemaVersion 1 //数据库版本号
+        daoPackage 'com.example.administrator.chushi.greendao.gen' //自动生成的工具类的包名
+        targetGenDir 'src/main/java' //路径
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'cn.yipianfengye.android:zxing-library:2.1'
+    //    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    //PickerView三级选择器
+    compile 'com.bigkoo:pickerview:2.0.8'
+    //fastjson 解析
+    compile 'com.alibaba:fastjson:1.2.23'
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    /*greenDao框架*/
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.lzy.net:okgo:2.1.4'
+    //可以单独使用，不需要依赖下方的扩展包
+    //    compile 'com.lzy.net:okrx:0.1.2'
+    //RxJava扩展支持，根据需要添加
+    //    compile 'com.lzy.net:okserver:1.1.3'
+    //下载管理和上传管理扩展，根据需要添加
+    compile files('libs/gson-2.7.jar')
+    compile files('libs/litepal-1.5.1.jar')
+    //    compile project(':PushSDK')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/alipaySdk-20170725.jar')
+    compile project(':PushSDK')
+    compile project(path: ':multi-image-selector')
+    //上传图片
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.1'
+}

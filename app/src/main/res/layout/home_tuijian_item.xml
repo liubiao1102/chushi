@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_tupian"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:src="@drawable/ertong"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#333"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:text="儿童营养套餐/2人"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip" />
+        <TextView
+            android:textSize="13sp"
+            android:textColor="#ffad73"
+            android:gravity="center"
+            android:text="￥128.00"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip" />
+    </LinearLayout>
+</LinearLayout>

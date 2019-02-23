@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/../PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chushi.iml" filepath="$PROJECT_DIR$/../chushi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chushimodole.iml" filepath="$PROJECT_DIR$/chushimodole.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/../multi-image-selector/multi-image-selector.iml" />
+    </modules>
+  </component>
+</project>

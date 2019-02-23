@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingRight="15dip"
+        android:paddingLeft="15dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+        <TextView
+            android:id="@+id/tv_peisong"
+            android:textColor="#333"
+            android:gravity="center_vertical"
+            android:text="朝阳区配送点"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="#f00"
+            android:id="@+id/tv_zhuangtai"
+            android:gravity="center_vertical"
+            android:text="已评论"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_dingdan_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:paddingLeft="80dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:id="@+id/tv_allnumber"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical"
+            android:text="共2件商品"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:text="合计："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_all_price"
+            android:textColor="@color/chengse"
+            android:gravity="center_vertical"
+            android:text="¥143.00"
+            android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/yunfei_price"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="（含运费 ¥0.00）"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"></View>
+    <TextView
+        android:id="@+id/tv_zengsong"
+        android:paddingLeft="15dip"
+        android:gravity="center_vertical"
+        android:text="赠送"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" />
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"></View>
+</LinearLayout>

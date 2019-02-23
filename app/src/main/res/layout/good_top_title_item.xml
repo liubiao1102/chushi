@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="15dip"
+    android:paddingBottom="10dip"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="100dip"
+        android:layout_height="70dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/q" />
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="年终大放送"
+        android:textColor="#333" />
+</LinearLayout>

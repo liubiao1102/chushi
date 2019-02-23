@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message_xq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.administrator.chushi.fragment.mine.MessageXQActivity">
+    <RelativeLayout
+        android:id="@+id/rl_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/icon_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的消息"
+            android:textColor="@color/textblack"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"></View>
+
+        <TextView
+            android:paddingRight="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="15dip"
+            android:id="@+id/message_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="消息内容"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginLeft="15dip"
+            android:id="@+id/message_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:text="2016-15-10   12 : 30"
+            android:textColor="#333"
+            android:textSize="16sp" />
+</LinearLayout>

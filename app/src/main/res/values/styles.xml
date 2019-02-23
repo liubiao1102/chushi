@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/chengse</item>
+        <item name="colorPrimaryDark">@color/chengse</item>
+        <item name="colorAccent">@color/chengse</item>
+    </style>
+
+    <!--主页面底部tab的style-->
+    <style name="bottom_tab_style">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <!--主页面底部tab的style-->
+    <style name="paixutab_style">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <!--看房界面顶部tab的style-->
+    <style name="look_toptab_style">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/tab_textmine_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/mdrawable</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:maxHeight">32dp</item>
+    </style>
+        <declare-styleable name="RatingBarView">
+
+            <attr name="starImageSize" format="dimension"/>
+            <attr name="RatingBarView" format="dimension"/>
+            <attr name="starCount" format="integer"/>
+            <attr name="starEmpty" format="reference"/>
+            <attr name="starFill" format="reference"/>
+
+        </declare-styleable>
+    <style name="add_new_style">
+        <item name="android:windowEnterAnimation">@anim/add_new_in</item>
+        <item name="android:windowExitAnimation">@anim/add_new_out</item>
+    </style>
+</resources>

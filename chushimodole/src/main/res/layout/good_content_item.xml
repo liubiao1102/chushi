@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_tupian"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_gravity="center"
+        android:src="@drawable/shangp1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/huise"></View>
+    <TextView
+        android:id="@+id/tv_content_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="国产头茬蓝莓"
+        android:textColor="@color/textblack"
+        android:textSize="14sp"/>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/diyishiyong"
+    android:layout_margin="10dip"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="30dip"
+                android:layout_gravity="center_vertical"
+                android:textColor="#fff"
+                android:text="¥"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_gravity="center_vertical"
+                android:textColor="#fff"
+                android:text="1600"
+                android:textSize="35sp"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="30dip"
+            android:id="@+id/tv_manjian"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="满200可用"
+            android:layout_weight="1"
+            android:layout_width="80dip"
+            android:layout_height="0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingRight="20dip"
+        android:paddingLeft="20dp"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal"
+            android:layout_weight="2.3">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip">
+
+                    <TextView
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        android:text="升级红包"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_title" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:background="@drawable/yiguoqi"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:id="@+id/tv_shengyu"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="有效期至：2017-12-31"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip" />
+        <TextView
+            android:layout_marginTop="5dip"
+            android:id="@+id/tv_is_manjian"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="满200可用"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip" />
+
+    </LinearLayout>
+
+</LinearLayout>

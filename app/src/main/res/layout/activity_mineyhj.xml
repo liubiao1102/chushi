@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_ding_dan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.administrator.lenglian.fragment.mine.MineDingDanActivity">
+    <RelativeLayout
+        android:id="@+id/rl_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/icon_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的优惠劵"
+            android:textColor="@color/textblack"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:padding="10dip"
+        android:id="@+id/rg_look"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/all_dingdan"
+            style="@style/look_toptab_style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/selector_wenzi"
+            android:gravity="center"
+            android:text="未使用（0）"/>
+
+        <RadioButton
+            android:id="@+id/rb_daifukuan"
+            style="@style/look_toptab_style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_wenzi"
+            android:gravity="center"
+            android:text="已使用（0）"/>
+        <RadioButton
+            android:id="@+id/rb_daifahuo"
+            style="@style/look_toptab_style"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_wenzi"
+            android:gravity="center"
+            android:text="已过期（0）"/>
+    </RadioGroup>
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"></View>
+    <com.example.administrator.lenglian.view.CustomViewPager
+        android:id="@+id/vp_look"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.administrator.lenglian.view.CustomViewPager>
+
+</LinearLayout>
